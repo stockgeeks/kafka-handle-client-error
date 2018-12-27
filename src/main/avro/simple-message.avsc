@@ -1,0 +1,9 @@
+{
+"namespace": "io.stockgeeks.kafkahandleclienterror.avro",
+"type": "record",
+"name": "SimpleMessage",
+"fields": [
+    { "name": "title", "type": "string"},
+    { "name": "throwError", "type": "boolean"}
+ ]
+}
