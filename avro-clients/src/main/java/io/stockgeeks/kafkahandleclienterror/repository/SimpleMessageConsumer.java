@@ -16,5 +16,13 @@ public class SimpleMessageConsumer {
   )
   public void listen(SimpleMessage simpleMessage) {
     log.info("Got message, title: {}, throwError: {}", simpleMessage.getTitle(), simpleMessage.getThrowError());
+    processMessage(simpleMessage);
+  }
+
+  private void processMessage(SimpleMessage simpleMessage) {
+    if(simpleMessage.getThrowError()) {
+      throw new RuntimeException("this will throw an exception....");
+    }
+    log.info("yey.... no exceptions thrown...");
   }
 }
