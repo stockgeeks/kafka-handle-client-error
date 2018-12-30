@@ -1,2 +1,12 @@
 server:
   port: 7070
+
+kafka:
+  hosts:
+    - kakfa: 9092
+  topic: stock-quote-pure
+  client:
+    num-threads: 3
+    groupId: pure-client-group-id
+  producer:
+    num-threads: 3
