@@ -5,6 +5,7 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>avro-clients</module>
+		<module>pure-clients</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
