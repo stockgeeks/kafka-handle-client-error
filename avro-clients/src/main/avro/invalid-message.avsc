@@ -1,0 +1,9 @@
+{
+"namespace": "io.stockgeeks.kafkahandleclienterror.avro",
+"type": "record",
+"name": "InvalidMessage",
+"fields": [
+    { "name": "cost", "type": "int"},
+    { "name": "name", "type": "string"}
+ ]
+}
