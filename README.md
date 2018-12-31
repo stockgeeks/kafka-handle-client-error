@@ -25,6 +25,6 @@ Start the infra-structure and the spring boot application under the avro-clients
 3. Now try to send a message with an invalid payload, you'll notice that because we're using Avro the producer will give an error avoiding the invalid message to ever be produced to the topic.
 4. Finally try now using a different producer to send a completely invalid message to the topic, the difference between this producer and the previous one is that this one is "valid" to the producer but as you will notice avro will still block the message on the producer side and throw an error saying it's payload compared to a previous registered message schema for that topic.
 
-#Conclusion
+# Conclusion
 
 The best and most straightforward approach to avoid invalid messages is to use apache avro schemas when using kafka, strongly recommended as it really adds a lot of value avoiding that we need to add all kinds of error handling on the client side that makes our code much more complex and hence increasing the chance to add bugs.
